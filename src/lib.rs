@@ -44,6 +44,9 @@
 #![forbid(unsafe_code)]
 
 pub mod constants;
+pub mod lsh512;
+
+pub use lsh512::{Lsh512, Variant512};
 
 use constants::*;
 

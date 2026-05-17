@@ -1,0 +1,19 @@
+[package]
+name = "lsh256"
+version = "0.1.0"
+edition = "2021"
+description = "LSH-256 (KS X 3262) cryptographic hash function — pure Rust implementation"
+license = "MPL-2.0"
+keywords = ["hash", "lsh", "ksx3262", "kisa", "cryptography"]
+categories = ["cryptography"]
+
+[lib]
+name = "lsh256"
+path = "src/lib.rs"
+
+[[bin]]
+name = "lsh256"
+path = "src/main.rs"
+
+[profile.release]
+opt-level = 3
